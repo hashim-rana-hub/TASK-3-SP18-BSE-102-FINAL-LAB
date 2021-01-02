@@ -1,0 +1,56 @@
+
+.bg-nav {
+  background-color: brown;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.heading {
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}  
+
+.table {
+  margin-bottom: 25px;
+}
+
+.add_Edit-heading {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.btn-info {
+    margin-top: 20px; 
+}
+.add {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 30px;
+    border-color: black;
+}
+.edit {
+  margin-left: 20px;
+  
+}
+.delete_edit {
+  margin-top: 5px;
+  border-radius: 20px;
+  border-color: black;
+}
+ .btn-submit {
+   margin-bottom: 20px;
+   display: inline-block;
+ }
+
+ .form-group, label {
+   font-size: 16px;
+ 
+ }
+

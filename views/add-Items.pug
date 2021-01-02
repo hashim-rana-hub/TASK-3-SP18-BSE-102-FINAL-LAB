@@ -1,0 +1,25 @@
+extends layout
+
+block content 
+    h1(class="add_Edit-heading") Add New Product
+    form(action="", method="post" ) 
+        .form-group 
+            label Product ID
+            input(type="text", class="form-control" name="id") 
+        .form-group 
+            label Product Name
+            input(type="text", class="form-control"  name="name") 
+        .form-group 
+            label Product Catagory
+            input(type="number", class="form-control"   name="catagory") 
+        .form-group 
+            label Product Price
+            input(type="number", class="form-control"  name="price") 
+        .form-group 
+            label Product Details
+            input(type="number", class="form-control"   name="details") 
+        .form-group 
+            label Product Image
+            input(type="number", class="form-control" name="image") 
+        
+        input(type="submit", class="btn btn-success btn-submit")    

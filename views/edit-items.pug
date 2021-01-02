@@ -1,0 +1,26 @@
+extends layout
+
+block content 
+    h1(class="add_Edit-heading") Edit Product
+    form(action="/itemsRoutes/update/"+item._id, method="post") 
+        .form-group 
+            label Product ID
+            input(type="text", class="form-control", name="productID", value=item.id) 
+        .form-group 
+            label Product Name
+            input(type="text", class="form-control", name="prName", value=item.name) 
+        .form-group 
+            label Product Catagory
+            input(type="text", class="form-control", name="prCatagory", value=item.catagory) 
+        .form-group 
+            label Product Price
+            input(type="text", class="form-control", name="prPrice", value=item.price) 
+        .form-group 
+            label Product Details
+            input(type="text", class="form-control", name="prDetails", value=item.details) 
+        .form-group 
+            label Product Image
+            input(type="text", class="form-control", name="prImage", value=item.image) 
+        
+        input(type="submit", class="btn btn-success btn-submit"  )  
+

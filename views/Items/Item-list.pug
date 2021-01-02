@@ -1,0 +1,39 @@
+extends ../layout 
+ 
+block content 
+
+    .row 
+        .col-sm-8
+             h1(class="heading") Manage Products
+        .col-sm-4
+                a(href="/itemsRoutes/add", class=" btn float-right add") <i class="fa fa-plus-circle"></i> Add New Product
+
+    table.table.table-hover
+        thead
+            tr
+                th Product ID
+                th Product Name
+                th Product Catagory
+                th Product Price
+                th Product Details
+                th Product Image
+                
+                th Action
+                
+            
+            
+        tbody
+            each list in lists 
+                tr
+                    td=list.id
+                    td=list.prName
+                    td=list.datagory
+                    td=list.price
+                    td=list.details
+                    td=list.image
+                    td 
+                        a(href="/itemsRoutes/delete/"+list._id, class="btn delete_edit btn-success btn-sm") Delete 
+                        
+                        a(href="/itemsRoutes/edit/"+list._id, class="btn delete_edit btn-success btn-sm edit")  Edit 
+        
+    
